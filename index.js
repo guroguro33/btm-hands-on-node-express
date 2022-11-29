@@ -10,8 +10,9 @@ app.get("/", (req, res, next) => {
 })
 
 app.get("/reset", (req, res, next) => {
-  res.send("リセットしました。")
+  res.send("カウンタをリセットしました。")
   counter = 1;
 })
 
-app.listen(10000, () => console.log('Example app listening on port 8000!'))
+// サーバーを起動したら、リクエストを10000番ポートで待ち受ける設定（renderのデフォルトのポート番号）
+app.listen(10000, () => console.log('Example app listening on port 10000!'))
