@@ -14,4 +14,4 @@ app.get("/reset", (req, res, next) => {
   counter = 1;
 })
 
-app.listen(8000, () => console.log('Example app listening on port 8000!'))
+app.listen(10000, () => console.log('Example app listening on port 8000!'))
